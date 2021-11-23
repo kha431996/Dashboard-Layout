@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard Tamplate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    
+    <style>
+    </style>
+</head>
+<body>
+    <section class="container-fluid">
+        <div class="row">
+            <!-- start left side -->
+            <div class="col-xl-3 bg-light vh-100 overflow-auto left-side marginLeft-100">
+                <!-- left side header -->
+                <div class="card mt-2 border-0 shadow-sm d-header">
+                    <div class="card-body overflow-hidden">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="">
+                                <h4 class="mb-0">
+                                    <i class="fa fa-home text-warning"></i>
+                                    <span class="text-warning">Enter</span> <span class="text-secondary">Name</span>
+                                </h4>
+                            </div>
+                            <button class="btn btn-outline-light text-secondary d-xl-none" id="sidebar-close"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- left side header -->
+
+                <!-- list  -->
+                <div class="p-3">
+                    <span class="fw-bold text-black-50 fs-5"> Manage Category</span>
+                 </div>
+                <a href="#" class="card border-0 shadow-sm menu-list-item-link text-decoration-none">
+                    <div class="card-body overflow-hidden">
+                        <i class="fas fa-layer-group text-secondary me-2"></i>
+                        <span class="fs-6 fw-bold text-secondary">Category</span>
+                    </div>
+                </a>
+                <a href="#" class="card border-0 shadow-sm mt-1 menu-list-item-link text-decoration-none">
+                    <div class="card-body overflow-hidden">
+                        <i class="fas fa-layer-group text-secondary me-2"></i>
+                        <span class="fs-6 fw-bold text-secondary">Category Update</span>
+                    </div>
+                </a>
+                <!-- list end -->
+
+                <!-- list  -->
+                <div class="p-3">
+                    <span class="fw-bold text-black-50 fs-5"> Manage Post</span>
+                 </div>
+                <a href="#" class="card border-0 shadow-sm menu-list-item-link text-decoration-none">
+                    <div class="card-body overflow-hidden">
+                        <i class="fas fa-plus-circle text-secondary me-2"></i>
+                        <span class="fs-6 fw-bold text-secondary">Post Add</span>
+                    </div>
+                </a>
+                <a href="#" class="card border-0 shadow-sm mt-1 menu-list-item-link text-decoration-none">
+                    <div class="card-body overflow-hidden">
+                        <i class="fas fa-list text-secondary me-2"></i>
+                        <span class="fs-6 fw-bold text-secondary">Post List</span>
+                    </div>
+                </a>
+                <button class="btn btn-secondary w-100 mt-3">
+                    <i class="fa fa-lock me-2"></i>
+                    <span class="">Log Out</span>
+                </button>
+                <!-- list end -->
+                
+            </div>
+            <!-- end left side -->
+
+            <!-- start right side -->
+            <div class="col-12 col-xl-9 vh-100 overflow-auto">
+                <!-- right header -->
+                <div class="card mt-2 bg-secondary border-0 d-header" >
+                    <div class="card-body overflow-hidden p-1">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="btn btn-light text-secondary d-xl-none" id="sidebar-open"><i class="fas fa-bars"></i></button>
+                            <form action="#" method="" class="d-none d-md-inline-block">
+                                <div class="d-flex">
+                                    <input type="text" class="form-control text-secondary me-2 " name="search" placeholder="Search Here" required>
+                                    <button class="btn btn-light"><i class="fas fa-search text-secondary"></i></button>
+                                </div>
+                            </form>
+                            <div class="bg-light rounded py-1 px-2">
+                                <img src="data/users/default.jpg" class="rounded-circle shadow" width="35px" height="35px" alt="">
+                                <span class="fw-bold text-secondary">Kaung Htet aung</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right header end-->
+                <!-- start status card -->
+                <div class="row ">
+                    <div class="col-12 col-md-6 col-xl-3 mt-3">
+                        <div class="card border-0 shadow status-card">
+                            <div class="card-body">
+                                <div class="text-secondary fs-3 text-center">50</div>
+                                <div class="text-secondary  text-center fw-bold"><i class="fa fa-users"></i> Total User</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3 mt-3">
+                        <div class="card border-0 shadow status-card">
+                            <div class="card-body">
+                                <div class="text-secondary fs-3 text-center">200</div>
+                                <div class="text-secondary  text-center fw-bold"><i class="fa fa-sticky-note"></i> Total Post</div>
+                            </div>
+                        </div>
+                    </div><div class="col-12 col-md-6 col-xl-3 mt-3">
+                        <div class="card border-0 shadow status-card">
+                            <div class="card-body">
+                                <div class="text-secondary fs-3 text-center">10</div>
+                                <div class="text-secondary  text-center fw-bold"><i class="fa fa-layer-group"></i> Total Category</div>
+                            </div>
+                        </div>
+                    </div><div class="col-12 col-md-6 col-xl-3 mt-3">
+                        <div class="card border-0 shadow status-card">
+                            <div class="card-body">
+                                <div class="text-secondary fs-3 text-center">6000</div>
+                                <div class="text-secondary  text-center fw-bold"><i class="fa fa-eye"></i> Total viewer</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- end status card -->
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-8 mt-3 overflow-hidden ">
+                        <canvas id="myChart" width="400" height="200"></canvas>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 mt-3 overflow-hidden ">
+                        <canvas id="myDoughnutChart" width="200" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- end right side -->
+        </div>
+    </section>
+    
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/chart.js/dist/chart.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+    
+</script>
+</html>

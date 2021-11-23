@@ -1,0 +1,43 @@
+.d-header{
+    position: sticky !important;
+    top: 0.5rem !important;
+    z-index: 10;
+}
+
+.menu-list-item-link{
+    transition: 0.5s;
+}
+.menu-list-item-link:hover{
+    transition: 0.5s;
+    box-shadow: none !important;
+    
+}
+.status-card{
+    transition: 0.5s;
+}
+.status-card:hover{
+    transition: 0.5s;
+    box-shadow:  0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+}
+
+
+
+@media screen and (max-width:1200px){
+    .left-side{
+        position: fixed;
+        width: 300px !important;
+        transition: 0.5s;
+        z-index: 11;
+    }
+    .marginLeft-100{
+        margin-left: -100%;
+    }
+    
+};
+
+
+
+
+
+
+
